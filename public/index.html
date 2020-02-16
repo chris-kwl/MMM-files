@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+	<title>MMM-files</title>
+	<body style="background-color:black;color:grey">
+		<h1>MMM-files is loaded.</h1>
+		<p id="txt">Files placed in "magic_mirror\modules\MMM-files\public\" can be accessed using the current uri ($uri) + filename.</p>
+		<script>
+			var x = document.URL;
+			var d = document.getElementById("txt")
+			d.innerHTML = d.innerHTML.replace("$uri", x);
+		</script>
+	</body>
+</html>
